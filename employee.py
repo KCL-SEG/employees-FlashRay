@@ -19,9 +19,9 @@ class Employee:
         if self.monthly_salary!=0 and self.contract_commission==0 and self.bonus_commission==0:
             return self.name+" works on a monthly salary of "+str(self.monthly_salary)+".  Their total pay is "+str(self.get_pay())+"."
         if self.monthly_salary==0 and self.contract_commission!=0 and self.bonus_commission==0:
-            return self.name+" works on a contract of "+str(self.hours)+" hours at "+str(self.hourly_salary)+"/hour and receives a commission for "+str(self.contracts)+"contract(s) at"+str(self.contract_commission)+"/contract.  Their total pay is "+str(self.get_pay())+"."
+            return self.name+" works on a contract of "+str(self.hours)+" hours at "+str(self.hourly_salary)+"/hour and receives a commission for "+str(self.contracts)+" contract(s) at "+str(self.contract_commission)+"/contract.  Their total pay is "+str(self.get_pay())+"."
         if self.monthly_salary!=0 and self.contract_commission!=0 and self.bonus_commission==0:
-            return self.name+" works on a monthly salary of "+str(self.monthly_salary)+" and receives a commission for "+str(self.contracts)+" contract(s) at"+str(self.contract_commission)+"/contract.  Their total pay is "+str(self.get_pay())+"."
+            return self.name+" works on a monthly salary of "+str(self.monthly_salary)+" and receives a commission for "+str(self.contracts)+" contract(s) at "+str(self.contract_commission)+"/contract.  Their total pay is "+str(self.get_pay())+"."
         if self.monthly_salary==0 and self.contract_commission==0 and self.bonus_commission!=0:
             return self.name+" works on a contract of "+str(self.hours)+" hours at "+str(self.hourly_salary)+"/hour and receives a bonus commission of "+str(self.bonus_commission)+".  Their total pay is "+str(self.get_pay())+"."
         if self.monthly_salary!=0 and self.contract_commission==0 and self.bonus_commission!=0:
@@ -47,3 +47,4 @@ robbie = Employee('Robbie', 2000, 0, 0, 0, 0, 1500)
 # Ariel works on a contract of 120 hours at 30/hour and receives a bonus commission of 600.  Their total pay is 4200.
 ariel = Employee('Ariel', 0, 30, 120, 0, 0, 600)
 
+print(renee)
