@@ -1,6 +1,7 @@
 """Tests for the solution of your exercise."""
 """DO NOT CHANGE THIS FILE!"""
 
+from unittest import TestCase
 from employee import *
 
 def test_billie():
